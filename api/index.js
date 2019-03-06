@@ -5,7 +5,7 @@ const Books = require('./models/Books');
 const validateBookInput = require('./validation/book');
 
 const PORT = 4000;
-const mongoUri = "mongodb://mongo2:27017/tiki";
+const mongoUri = "mongodb://mongo:27017/tiki";
 
 mongoose.connect(mongoUri, { useNewUrlParser: true }).then(() => { console.log('DATABASE IS CONNECTED'); });
 

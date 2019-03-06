@@ -11,7 +11,7 @@ services:
     links:
       - app
   app:
-    container_name: docker-node-mongo
+    container_name: tikiapp-app
     restart: always
     build: ./api
     ports:
@@ -19,7 +19,7 @@ services:
     links:
       - mongo
   mongo:
-    container_name: mongo2
+    # container_name: mongo2
     image: mongo
     ports:
       - '27017:27017'
